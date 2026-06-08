@@ -41,7 +41,7 @@ Use this if you want the browser to run in the cloud instead of locally. It requ
 ## How To Use
 
 1. Configure the MCP servers in your AI client using one of the example files in `mcp/`.
-   - **Codex users:** copy `.codex/config.example.toml` to `.codex/config.toml` and fill in your API keys.
+   - **Codex users:** `.codex/config.toml` is ready to use — just set the required environment variables before running.
 2. Give the agent the prompt in `prompts/pyrenees-planner.md`.
 3. Ask it to write the final result to `itineraries/pyrenees-hendaye-2026.md`.
 
