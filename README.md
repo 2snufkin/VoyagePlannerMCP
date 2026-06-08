@@ -6,7 +6,6 @@ The planner is intended to use MCP browser/scraping tools:
 
 - Playwright MCP: navigate unfamiliar websites, click, fill date forms, inspect pages.
 - Firecrawl MCP: extract readable Markdown/text from pages when browser interaction is not needed.
-- Optional Browserbase MCP: use a hosted browser for longer or more reliable remote sessions.
 
 The expected output is a Markdown itinerary with each stage, distance, elevation, sleeping option, availability, price, booking/contact link, and source confidence.
 
@@ -34,13 +33,9 @@ Set:
 $env:FIRECRAWL_API_KEY="your_key_here"
 ```
 
-### Browserbase MCP, Optional
-
-Use this if you want the browser to run in the cloud instead of locally. It requires Browserbase credentials.
-
 ## How To Use
 
-1. Configure the MCP servers in your AI client using one of the example files in `mcp/`.
+1. Configure the MCP servers in your AI client using `mcp/mcp.json`.
    - **Codex users:** `.codex/config.toml` is ready to use — just set the required environment variables before running.
 2. Give the agent the prompt in `prompts/pyrenees-planner.md`.
 3. Ask it to write the final result to `itineraries/pyrenees-hendaye-2026.md`.
