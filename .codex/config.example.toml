@@ -1,0 +1,15 @@
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest"]
+
+[mcp_servers.firecrawl]
+command = "npx"
+args = ["-y", "firecrawl-mcp"]
+env_vars = ["FIRECRAWL_API_KEY"]
+
+# Optional: use a cloud-hosted browser instead of local Playwright.
+# Requires BROWSERBASE_API_KEY and BROWSERBASE_PROJECT_ID.
+# [mcp_servers.browserbase]
+# command = "npx"
+# args = ["-y", "@browserbasehq/mcp-server"]
+# env_vars = ["BROWSERBASE_API_KEY", "BROWSERBASE_PROJECT_ID"]

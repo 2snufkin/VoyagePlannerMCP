@@ -1,2 +1,3 @@
 .claude/
-.codex/
+.codex/*
+!.codex/config.example.toml
